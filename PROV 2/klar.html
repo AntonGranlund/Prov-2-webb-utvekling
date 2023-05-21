@@ -1,0 +1,63 @@
+
+<div class="header">
+
+    <head>
+      <link rel="icon"  href="bilder/flower-pot.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/start.css">
+      <link rel="stylesheet" href="css/signup.css">
+    
+    
+      <h1>Blommor AB Åkersberga</h1>
+    
+    
+    </div>
+    
+    
+    
+    
+      
+        <div class="navbar">
+        <a href="info.html">Info</a>
+        <a href="betalning.html">betalning</a>
+        <div class="dropdown">
+         <button class="dropbtn" onclick="myFunction()">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div> 
+        </div>
+      <script>
+    
+      function myFunction() {
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.style.overflow = " ";
+        //console.log(dropdown.style.display);
+        dropdown.classList.toggle("show");
+      }
+    
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+    </head>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      </style>
+
+
+
+<h1>Din beställning är skickad/ Youre order is sent
+
+</h1>

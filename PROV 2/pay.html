@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <div class="header">
+
+        <head>
+          <link rel="icon"  href="bilder/flower-pot.png">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="css/start.css">
+        
+        
+          <h1>Betalning/ Payment</h1>
+        
+        
+        </div>
+        
+        
+        
+        
+          
+            <div class="navbar">
+            <a href="info.html">Info</a>
+            <a href="betalning.html#">betalning</a>
+            <div class="dropdown">
+             <button class="dropbtn" onclick="myFunction()">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            </div> 
+            </div>
+          <script>
+        
+          function myFunction() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.style.overflow = " ";
+            //console.log(dropdown.style.display);
+            dropdown.classList.toggle("show");
+          }
+        
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+          </script>
+
+
+
+
+
+
+
+
+
+
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+<link rel="stylesheet" href="pay.css">
+
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('bilder/betalbild.png');
+        }
+        </style>
+
+
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h2>Betalnings adress/ Billing Address</h2>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe"><br>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label><br>
+            <input type="text" id="email" name="email" placeholder="john@example.com"><br>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label><br>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street"><br>
+            <label for="city"><i class="fa fa-institution"></i> City</label><br>
+            <input type="text" id="city" name="city" placeholder="New York"><br>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <br>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label><br>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h2>Payment</h2>
+            <h2><label for="fname">Accepted Cards:</label></h2>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label><br>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe"><br>
+            <label for="ccnum">Credit card number</label><br>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+            <label for="expmonth">Exp Month</label><br>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September"><br>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label><br>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <p><a href="#">Tulpaner</a> <span class="price">$15</span></p>
+      <p><a href="#">Rosor</a> <span class="price">$5</span></p>
+      <p><a href="#">Violer</a> <span class="price">$8</span></p>
+      <p><a href="#">Frön</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      <p><a href="klar.html">Betala</a> </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

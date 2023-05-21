@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon"  href="bilder/flower-pot.png">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <div class="navbar">
+        <a href="start.html">Home</a>
+        <a href="info.html">Info</a>
+        <div class="dropdown">
+         <button class="dropbtn" onclick="myFunction()">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div> 
+        </div>
+    <script>
+    
+    function myFunction() {
+      var dropdown = document.getElementById("myDropdown");
+      dropdown.style.overflow = " ";
+      //console.log(dropdown.style.display);
+      dropdown.classList.toggle("show");
+    }
+    
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+
+   
+
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="signup.css">
+
+
+    
+    <script
+      src="https://kit.fontawesome.com/7a6afc2556.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="icons/icons8-tuition-30.png"
+      type="image/x-icon" />
+
+  
+        <h3><a href="pay.html ">Gå vidare </a></h3>
+
+        <style>
+          h3 {
+              writing-mode: vertical-lr;
+              text-orientation: upright;
+              background-color:red;
+          }
+   
+          @supports(text-orientation:upright){
+              h3{
+                  background-color: greenyellow;
+              }
+          }
+   
+      </style>
+      
+
+
+      
+
+  </head>
+  <body style="background-color:rgb(91, 91, 91);">
+  <center>
+  <body>
+    
+    <h1>Betalnings info </h1> 
+    
+
+   
+  
+      <div class = ic > 
+      <h2>👇klicka här</h2>
+      <div class="kort"> <a class="fa-brands fab fa-cc-paypal fa-stack-1x" href="https://www.paypal.com/se/home">   </a> <br>  </div>
+      <div class="kort"> <a class="fa-brands fab fa-cc-apple-pay fa-stack-1x" href="https://www.apple.com/se/apple-pay/"></a> <br> </div>
+      <div class="kort"> <a class="fa-brands fab fa-cc-mastercard fa-stack-1x" href="https://www.mastercard.se/sv-se.html"></a></div>
+      
+      
+      <div class="bild"><img src="/bilder/ho6p9qj96mgmvecuab5ii2h0l5.png" alt="" ></div>
+
+  </body>
+  </center>
+
+
+
+
+
+        <body>
+        
+      
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Bli medlem</button>
+        
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <h1>Skapa konto</h1>
+              <p>Va snäll och fyll i nedanstående rutor.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+        
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <center> 
+      
+      <i class="fa-solid fa-phone"></i> Telephone 
+      <i class="fa-brands fa-instagram"></i> Instagram 
+      <i class="fa-brands fa-snapchat"></i> Snapchat
+      
+      </center>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<div class="header">
+
+<head>
+  <link rel="icon"  href="bilder/flower-pot.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/start.css">
+  <link rel="stylesheet" href="css/signup.css">
+
+
+  <h1>Blommor AB Åkersberga</h1>
+
+
+</div>
+
+
+
+
+  
+    <div class="navbar">
+    <a href="info.html">Info</a>
+    <a href="betalning.html">betalning</a>
+    <div class="dropdown">
+     <button class="dropbtn" onclick="myFunction()">Dropdown
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    </div> 
+    </div>
+  <script>
+
+  function myFunction() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.style.overflow = " ";
+    //console.log(dropdown.style.display);
+    dropdown.classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
+</head>
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  </style>
+  </head>
+  <body>
+  
+<br>
+  <div class = pris>
+  <table>
+    <tr>
+      <th>Month</th>
+      <th>Avredge plant cost</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+    <tr>
+      <td>march</td>
+      <td>$90</td>
+    </tr>
+    <tr>
+      <td>April</td>
+      <td>$110</td>
+    </tr>
+  </table>
+  </div>
+  
+
+
+<img class = bild src="bilder/ho6p9qj96mgmvecuab5ii2h0l5.png" alt="bakgrund">
+
+
+<div class="område">
+<center><h1>Området vi levererar till:</h1></center>
+<img src="bilder/område.png" > 
+</div>
+
+<div class="ruta n2"><h2> <img class = bbild src="bilder/viol.png" alt="">
+  Violsläktet är ett släkte i familjen violväxter. Det finns mellan 400 och 500 violarter runt om i världen. 
+  De växer ofta i fuktiga och halvskuggiga lägen. De flesta violer är fleråriga örter, 
+  men det finns även några ettåriga samt några små buskar.
+    </h2>
+</div>
+
+
+
+<div class="ruta n3"><h2> 
+  <img class = bbild src="bilder/rosor.png" alt=""> 
+  Rossläktet är ett växtsläkte som i familjen rosväxter med ca 200 arter spridda från subtropiska till kalltempererade områden. 
+  Den gren av botaniken som studerar släktet Rosa kallas rhodologi, av grekiska ῥόδον.
+      </h2>
+</div>
+
+
+
+<div class="ruta n1"><h2> <img class = bbild src="bilder/tulpaner.png" alt=""> 
+  Tulpansläktet eller tulpaner är ett släkte som ingår i familjen liljeväxter. 
+  Blommorna sitter enstaka eller några få på samma stjälk. Som alla liljeväxter har de sextaliga blommor. 
+  Kalkbladen är sex stycken stora och sex ståndare samt en tretalig synkarp pistill.
+  </h2>
+</div>
+
+
+</body>
+
+</html>
